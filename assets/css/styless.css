@@ -1,0 +1,152 @@
+/* Styles personnalisés pour le header */
+.min-vh-100 {
+    min-height: 80vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+    font-size: 0.7em;
+}
+
+.position-relative .badge {
+    font-size: 0.6em;
+    padding: 0.25em 0.4em;
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
+/* Animation pour le panier */
+.fa-shopping-cart {
+    transition: transform 0.3s ease;
+}
+
+.fa-shopping-cart:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        border: none;
+        box-shadow: none;
+    }
+    
+    .input-group {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour la page d'accueil */
+.hero-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+}
+
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.category-icon {
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.1);
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.promotion-card {
+    border: 2px solid #dc3545 !important;
+}
+
+.advantage-item {
+    padding: 20px;
+}
+
+.advantage-item i {
+    transition: transform 0.3s ease;
+}
+
+.advantage-item:hover i {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    
+    .category-card {
+        margin-bottom: 15px;
+    }
+}
